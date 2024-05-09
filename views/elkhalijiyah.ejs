@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Elkhalijiyah Dashboard</title>
+    <link rel="shortcut icon" href="/images/DSS.png"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/backend-plugin.min.css">
+    <link rel="stylesheet" href="/css/backend.css?v=1.0.0">
+    <link rel="stylesheet" href="/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/remixicon/fonts/remixicon.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dashboard-title {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin: 50px 0 30px;
+            text-transform: uppercase;
+        }
+        
+        .container-fluid {
+            padding: 20px;
+        }
+        
+        .card {
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-total-sale {
+            justify-content: center;
+        }
+        
+        .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        
+        .icon i {
+            font-size: 36px;
+        }
+        
+        .card p {
+            margin: 0;
+        }
+        
+        .iq-progress-bar {
+            height: 6px;
+            background-color: #f1f2f6;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        
+        .bg-info-light {
+            background-color: #78c2ad;
+        }
+        
+        .iq-progress {
+            height: 6px;
+            border-radius: 20px;
+            display: block;
+        }
+        
+        .progress-1 {
+            width: 90%;
+            background-color: #78c2ad;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="dashboard-title">Elkhalijiyah Dashboard</h1>
+
+<div class="container-fluid">
+    
+    <div class="row">
+        <!-- Carte 1 : Account Move Count -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4 card-total-sale">
+                        <div class="icon iq-icon-box-2 bg-info-light">
+                            <i class="ri-stack-line"></i>
+                        </div>
+                        <div id="accountMoveCount">
+                            <p>Total number of entries in Account Move <strong><%= accountMoveCount %></strong></p>
+                        </div>
+                    </div>
+                    <div class="iq-progress-bar mt-2">
+                        <span class="bg-info iq-progress progress-1" data-percent="90"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carte 2 : Partner Count -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4 card-total-sale">
+                        <div class="icon iq-icon-box-2 bg-info-light">
+                            <i class="ri-group-line"></i>
+                        </div>
+                        <div id="partnerCount">
+                            <p>Total number of partners <strong><%= partnerCount %></strong></p>
+                        </div>
+                    </div>
+                    <div class="iq-progress-bar mt-2">
+                        <span class="bg-info iq-progress progress-1" data-percent="90"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carte 3 : Sales Revenue Count -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4 card-total-sale">
+                        <div class="icon iq-icon-box-2 bg-info-light">
+                            <i class="ri-money-dollar-circle-line"></i>
+                        </div>
+                        <div id="SalesRevenueCount">
+                            <p>Sales revenue <strong><%= SalesRevenueCount %></strong></p>
+                        </div>
+                    </div>
+                    <div class="iq-progress-bar mt-2">
+                        <span class="bg-info iq-progress progress-1" data-percent="90"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <!-- Carte 4 : Total Orders Count -->
+        <div class="col-lg-4 col-md-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-4 card-total-sale">
+                        <div class="icon iq-icon-box-2 bg-info-light">
+                            <i class="ri-shopping-cart-line"></i>
+                        </div>
+                        <div id="TotalOrdersCount">
+                            <p>Total number of orders placed by customers <strong><%= TotalOrdersCount %></strong></p>
+                        </div>
+                    </div>
+                    <div class="iq-progress-bar mt-2">
+                        <span class="bg-info iq-progress progress-1" data-percent="90"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Backend Bundle JavaScript -->
+<script src="/js/backend-bundle.min.js"></script>
+<!-- Table Treeview JavaScript -->
+<script src="/js/table-treeview.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="/js/customizer.js"></script>
+<!-- Chart Custom JavaScript -->
+<script async src="/js/chart-custom.js"></script>
+<!-- app JavaScript -->
+<script src="/js/app.js"></script>
+
+</body>
+</html>
