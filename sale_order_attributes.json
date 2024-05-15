@@ -1,0 +1,568 @@
+{
+  "name": {
+    "type": "char",
+    "required": true,
+    "string": "Order Reference"
+  },
+  "origin": {
+    "type": "char",
+    "help": "Reference of the document that generated this sales order request.",
+    "required": false,
+    "string": "Source Document"
+  },
+  "client_order_ref": {
+    "type": "char",
+    "required": false,
+    "string": "Customer Reference"
+  },
+  "reference": {
+    "type": "char",
+    "help": "The payment communication of this sale order.",
+    "required": false,
+    "string": "Payment Ref."
+  },
+  "state": {
+    "type": "selection",
+    "required": false,
+    "string": "Status"
+  },
+  "date_order": {
+    "type": "datetime",
+    "help": "Creation date of draft/sent orders,\nConfirmation date of confirmed orders.",
+    "required": true,
+    "string": "Order Date"
+  },
+  "validity_date": {
+    "type": "date",
+    "required": false,
+    "string": "Expiration"
+  },
+  "is_expired": {
+    "type": "boolean",
+    "required": false,
+    "string": "Is expired"
+  },
+  "require_signature": {
+    "type": "boolean",
+    "help": "Request a online signature to the customer in order to confirm orders automatically.",
+    "required": false,
+    "string": "Online Signature"
+  },
+  "require_payment": {
+    "type": "boolean",
+    "help": "Request an online payment to the customer in order to confirm orders automatically.",
+    "required": false,
+    "string": "Online Payment"
+  },
+  "create_date": {
+    "type": "datetime",
+    "help": "Date on which sales order is created.",
+    "required": false,
+    "string": "Creation Date"
+  },
+  "user_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Salesperson"
+  },
+  "partner_invoice_id": {
+    "type": "many2one",
+    "required": true,
+    "string": "Invoice Address"
+  },
+  "partner_shipping_id": {
+    "type": "many2one",
+    "required": true,
+    "string": "Delivery Address"
+  },
+  "pricelist_id": {
+    "type": "many2one",
+    "help": "If you change the pricelist, only newly added lines will be affected.",
+    "required": true,
+    "string": "Pricelist"
+  },
+  "currency_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Currency"
+  },
+  "analytic_account_id": {
+    "type": "many2one",
+    "help": "The analytic account related to a sales order.",
+    "required": false,
+    "string": "Analytic Account"
+  },
+  "order_line": {
+    "type": "one2many",
+    "required": false,
+    "string": "Order Lines"
+  },
+  "invoice_count": {
+    "type": "integer",
+    "required": false,
+    "string": "Invoice Count"
+  },
+  "invoice_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Invoices"
+  },
+  "invoice_status": {
+    "type": "selection",
+    "required": false,
+    "string": "Invoice Status"
+  },
+  "note": {
+    "type": "text",
+    "required": false,
+    "string": "Terms and conditions"
+  },
+  "amount_untaxed": {
+    "type": "monetary",
+    "required": false,
+    "string": "Untaxed Amount"
+  },
+  "amount_by_group": {
+    "type": "binary",
+    "help": "type: [(name, amount, base, formated amount, formated base)]",
+    "required": false,
+    "string": "Tax amount by group"
+  },
+  "amount_tax": {
+    "type": "monetary",
+    "required": false,
+    "string": "Taxes"
+  },
+  "amount_total": {
+    "type": "monetary",
+    "required": false,
+    "string": "Total"
+  },
+  "currency_rate": {
+    "type": "float",
+    "help": "The rate of the currency to the currency of rate 1 applicable at the date of the order",
+    "required": false,
+    "string": "Currency Rate"
+  },
+  "payment_term_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Payment Terms"
+  },
+  "fiscal_position_id": {
+    "type": "many2one",
+    "help": "Fiscal positions are used to adapt taxes and accounts for particular customers or sales orders/invoices.The default value comes from the customer.",
+    "required": false,
+    "string": "Fiscal Position"
+  },
+  "company_id": {
+    "type": "many2one",
+    "required": true,
+    "string": "Company"
+  },
+  "team_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Sales Team"
+  },
+  "signature": {
+    "type": "binary",
+    "help": "Signature received through the portal.",
+    "required": false,
+    "string": "Signature"
+  },
+  "signed_by": {
+    "type": "char",
+    "help": "Name of the person that signed the SO.",
+    "required": false,
+    "string": "Signed By"
+  },
+  "signed_on": {
+    "type": "datetime",
+    "help": "Date of the signature.",
+    "required": false,
+    "string": "Signed On"
+  },
+  "commitment_date": {
+    "type": "datetime",
+    "help": "This is the delivery date promised to the customer. If set, the delivery order will be scheduled based on this date rather than product lead times.",
+    "required": false,
+    "string": "Delivery Date"
+  },
+  "amount_undiscounted": {
+    "type": "float",
+    "required": false,
+    "string": "Amount Before Discount"
+  },
+  "type_name": {
+    "type": "char",
+    "required": false,
+    "string": "Type Name"
+  },
+  "transaction_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Transactions"
+  },
+  "authorized_transaction_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Authorized Transactions"
+  },
+  "show_update_pricelist": {
+    "type": "boolean",
+    "help": "Technical Field, True if the pricelist was changed;\n this will then display a recomputation button",
+    "required": false,
+    "string": "Has Pricelist Changed"
+  },
+  "tag_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Tags"
+  },
+  "sale_order_template_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Quotation Template"
+  },
+  "sale_order_option_ids": {
+    "type": "one2many",
+    "required": false,
+    "string": "Optional Products Lines"
+  },
+  "purchase_order_count": {
+    "type": "integer",
+    "required": false,
+    "string": "Number of Purchase Order Generated"
+  },
+  "incoterm": {
+    "type": "many2one",
+    "help": "International Commercial Terms are a series of predefined commercial terms used in international transactions.",
+    "required": false,
+    "string": "Incoterm"
+  },
+  "picking_policy": {
+    "type": "selection",
+    "help": "If you deliver all products at once, the delivery order will be scheduled based on the greatest product lead time. Otherwise, it will be based on the shortest.",
+    "required": true,
+    "string": "Shipping Policy"
+  },
+  "warehouse_id": {
+    "type": "many2one",
+    "required": true,
+    "string": "Warehouse"
+  },
+  "picking_ids": {
+    "type": "one2many",
+    "required": false,
+    "string": "Transfers"
+  },
+  "delivery_count": {
+    "type": "integer",
+    "required": false,
+    "string": "Delivery Orders"
+  },
+  "procurement_group_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Procurement Group"
+  },
+  "effective_date": {
+    "type": "date",
+    "help": "Completion date of the first delivery order.",
+    "required": false,
+    "string": "Effective Date"
+  },
+  "expected_date": {
+    "type": "datetime",
+    "help": "Delivery date you can promise to the customer, computed from the minimum lead time of the order lines in case of Service products. In case of shipping, the shipping policy of the order will be taken into account to either use the minimum or maximum lead time of the order lines.",
+    "required": false,
+    "string": "Expected Date"
+  },
+  "json_popover": {
+    "type": "char",
+    "required": false,
+    "string": "JSON data for the popover widget"
+  },
+  "show_json_popover": {
+    "type": "boolean",
+    "required": false,
+    "string": "Has late picking"
+  },
+  "branch_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Lounge Name"
+  },
+  "code": {
+    "type": "char",
+    "required": false,
+    "string": "Code"
+  },
+  "order_type": {
+    "type": "boolean",
+    "required": false,
+    "string": "Delayed Flight"
+  },
+  "private_aviation": {
+    "type": "boolean",
+    "required": false,
+    "string": "Private Aviation"
+  },
+  "flight_no": {
+    "type": "char",
+    "required": false,
+    "string": "Flight Number"
+  },
+  "departure_time": {
+    "type": "datetime",
+    "required": false,
+    "string": "Departure Time"
+  },
+  "service_time": {
+    "type": "datetime",
+    "required": false,
+    "string": "Service Time"
+  },
+  "destination": {
+    "type": "char",
+    "required": false,
+    "string": "Destination"
+  },
+  "zone_no": {
+    "type": "char",
+    "required": false,
+    "string": "Zone Number"
+  },
+  "gate_no": {
+    "type": "char",
+    "required": false,
+    "string": "Gate Number"
+  },
+  "email": {
+    "type": "char",
+    "required": false,
+    "string": "Email Address"
+  },
+  "requested": {
+    "type": "char",
+    "required": false,
+    "string": "Requested Name"
+  },
+  "service_type": {
+    "type": "selection",
+    "required": false,
+    "string": "Service Type"
+  },
+  "partner_id": {
+    "type": "many2one",
+    "required": true,
+    "string": "Customer"
+  },
+  "total_quantity": {
+    "type": "float",
+    "required": false,
+    "string": "Total Quantity"
+  },
+  "campaign_id": {
+    "type": "many2one",
+    "help": "This is a name that helps you keep track of your different campaign efforts, e.g. Fall_Drive, Christmas_Special",
+    "required": false,
+    "string": "Campaign"
+  },
+  "source_id": {
+    "type": "many2one",
+    "help": "This is the source of the link, e.g. Search Engine, another domain, or name of email list",
+    "required": false,
+    "string": "Source"
+  },
+  "medium_id": {
+    "type": "many2one",
+    "help": "This is the method of delivery, e.g. Postcard, Email, or Banner Ad",
+    "required": false,
+    "string": "Medium"
+  },
+  "activity_ids": {
+    "type": "one2many",
+    "required": false,
+    "string": "Activities"
+  },
+  "activity_state": {
+    "type": "selection",
+    "help": "Status based on activities\nOverdue: Due date is already passed\nToday: Activity date is today\nPlanned: Future activities.",
+    "required": false,
+    "string": "Activity State"
+  },
+  "activity_user_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Responsible User"
+  },
+  "activity_type_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Next Activity Type"
+  },
+  "activity_type_icon": {
+    "type": "char",
+    "help": "Font awesome icon e.g. fa-tasks",
+    "required": false,
+    "string": "Activity Type Icon"
+  },
+  "activity_date_deadline": {
+    "type": "date",
+    "required": false,
+    "string": "Next Activity Deadline"
+  },
+  "my_activity_date_deadline": {
+    "type": "date",
+    "required": false,
+    "string": "My Activity Deadline"
+  },
+  "activity_summary": {
+    "type": "char",
+    "required": false,
+    "string": "Next Activity Summary"
+  },
+  "activity_exception_decoration": {
+    "type": "selection",
+    "help": "Type of the exception activity on record.",
+    "required": false,
+    "string": "Activity Exception Decoration"
+  },
+  "activity_exception_icon": {
+    "type": "char",
+    "help": "Icon to indicate an exception activity.",
+    "required": false,
+    "string": "Icon"
+  },
+  "message_is_follower": {
+    "type": "boolean",
+    "required": false,
+    "string": "Is Follower"
+  },
+  "message_follower_ids": {
+    "type": "one2many",
+    "required": false,
+    "string": "Followers"
+  },
+  "message_partner_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Followers (Partners)"
+  },
+  "message_channel_ids": {
+    "type": "many2many",
+    "required": false,
+    "string": "Followers (Channels)"
+  },
+  "message_ids": {
+    "type": "one2many",
+    "required": false,
+    "string": "Messages"
+  },
+  "message_unread": {
+    "type": "boolean",
+    "help": "If checked, new messages require your attention.",
+    "required": false,
+    "string": "Unread Messages"
+  },
+  "message_unread_counter": {
+    "type": "integer",
+    "help": "Number of unread messages",
+    "required": false,
+    "string": "Unread Messages Counter"
+  },
+  "message_needaction": {
+    "type": "boolean",
+    "help": "If checked, new messages require your attention.",
+    "required": false,
+    "string": "Action Needed"
+  },
+  "message_needaction_counter": {
+    "type": "integer",
+    "help": "Number of messages which requires an action",
+    "required": false,
+    "string": "Number of Actions"
+  },
+  "message_has_error": {
+    "type": "boolean",
+    "help": "If checked, some messages have a delivery error.",
+    "required": false,
+    "string": "Message Delivery error"
+  },
+  "message_has_error_counter": {
+    "type": "integer",
+    "help": "Number of messages with delivery error",
+    "required": false,
+    "string": "Number of errors"
+  },
+  "message_attachment_count": {
+    "type": "integer",
+    "required": false,
+    "string": "Attachment Count"
+  },
+  "message_main_attachment_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Main Attachment"
+  },
+  "website_message_ids": {
+    "type": "one2many",
+    "help": "Website communication history",
+    "required": false,
+    "string": "Website Messages"
+  },
+  "message_has_sms_error": {
+    "type": "boolean",
+    "help": "If checked, some messages have a delivery error.",
+    "required": false,
+    "string": "SMS Delivery error"
+  },
+  "access_url": {
+    "type": "char",
+    "help": "Customer Portal URL",
+    "required": false,
+    "string": "Portal Access URL"
+  },
+  "access_token": {
+    "type": "char",
+    "required": false,
+    "string": "Security Token"
+  },
+  "access_warning": {
+    "type": "text",
+    "required": false,
+    "string": "Access warning"
+  },
+  "id": {
+    "type": "integer",
+    "required": false,
+    "string": "ID"
+  },
+  "display_name": {
+    "type": "char",
+    "required": false,
+    "string": "Display Name"
+  },
+  "create_uid": {
+    "type": "many2one",
+    "required": false,
+    "string": "Created by"
+  },
+  "write_uid": {
+    "type": "many2one",
+    "required": false,
+    "string": "Last Updated by"
+  },
+  "write_date": {
+    "type": "datetime",
+    "required": false,
+    "string": "Last Updated on"
+  },
+  "__last_update": {
+    "type": "datetime",
+    "required": false,
+    "string": "Last Modified on"
+  }
+}

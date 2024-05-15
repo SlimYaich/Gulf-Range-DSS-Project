@@ -1,0 +1,187 @@
+{
+  "name": {
+    "type": "char",
+    "required": false,
+    "string": "Order Reference"
+  },
+  "date": {
+    "type": "datetime",
+    "required": false,
+    "string": "Order Date"
+  },
+  "product_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Product Variant"
+  },
+  "product_uom": {
+    "type": "many2one",
+    "required": false,
+    "string": "Unit of Measure"
+  },
+  "product_uom_qty": {
+    "type": "float",
+    "required": false,
+    "string": "Qty Ordered"
+  },
+  "qty_delivered": {
+    "type": "float",
+    "required": false,
+    "string": "Qty Delivered"
+  },
+  "qty_to_invoice": {
+    "type": "float",
+    "required": false,
+    "string": "Qty To Invoice"
+  },
+  "qty_invoiced": {
+    "type": "float",
+    "required": false,
+    "string": "Qty Invoiced"
+  },
+  "partner_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Customer"
+  },
+  "company_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Company"
+  },
+  "user_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Salesperson"
+  },
+  "price_total": {
+    "type": "float",
+    "required": false,
+    "string": "Total"
+  },
+  "price_subtotal": {
+    "type": "float",
+    "required": false,
+    "string": "Untaxed Total"
+  },
+  "untaxed_amount_to_invoice": {
+    "type": "float",
+    "required": false,
+    "string": "Untaxed Amount To Invoice"
+  },
+  "untaxed_amount_invoiced": {
+    "type": "float",
+    "required": false,
+    "string": "Untaxed Amount Invoiced"
+  },
+  "product_tmpl_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Product"
+  },
+  "categ_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Product Category"
+  },
+  "nbr": {
+    "type": "integer",
+    "required": false,
+    "string": "# of Lines"
+  },
+  "pricelist_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Pricelist"
+  },
+  "analytic_account_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Analytic Account"
+  },
+  "team_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Sales Team"
+  },
+  "country_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Customer Country"
+  },
+  "industry_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Customer Industry"
+  },
+  "commercial_partner_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Customer Entity"
+  },
+  "weight": {
+    "type": "float",
+    "required": false,
+    "string": "Gross Weight"
+  },
+  "volume": {
+    "type": "float",
+    "required": false,
+    "string": "Volume"
+  },
+  "discount": {
+    "type": "float",
+    "required": false,
+    "string": "Discount %"
+  },
+  "discount_amount": {
+    "type": "float",
+    "required": false,
+    "string": "Discount Amount"
+  },
+  "campaign_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Campaign"
+  },
+  "medium_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Medium"
+  },
+  "source_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Source"
+  },
+  "order_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Order #"
+  },
+  "warehouse_id": {
+    "type": "many2one",
+    "required": false,
+    "string": "Warehouse"
+  },
+  "state": {
+    "type": "selection",
+    "required": false,
+    "string": "Status"
+  },
+  "id": {
+    "type": "integer",
+    "required": false,
+    "string": "ID"
+  },
+  "display_name": {
+    "type": "char",
+    "required": false,
+    "string": "Display Name"
+  },
+  "__last_update": {
+    "type": "datetime",
+    "required": false,
+    "string": "Last Modified on"
+  }
+}

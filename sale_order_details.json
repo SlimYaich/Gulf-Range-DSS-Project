@@ -1,0 +1,652 @@
+{
+  "fields": [
+    {
+      "id": 8437,
+      "name": "__last_update",
+      "field_description": "Last Modified on",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8380,
+      "name": "access_token",
+      "field_description": "Security Token",
+      "ttype": "char"
+    },
+    {
+      "id": 8379,
+      "name": "access_url",
+      "field_description": "Portal Access URL",
+      "ttype": "char"
+    },
+    {
+      "id": 8381,
+      "name": "access_warning",
+      "field_description": "Access warning",
+      "ttype": "text"
+    },
+    {
+      "id": 8360,
+      "name": "activity_date_deadline",
+      "field_description": "Next Activity Deadline",
+      "ttype": "date"
+    },
+    {
+      "id": 8362,
+      "name": "activity_exception_decoration",
+      "field_description": "Activity Exception Decoration",
+      "ttype": "selection"
+    },
+    {
+      "id": 8363,
+      "name": "activity_exception_icon",
+      "field_description": "Icon",
+      "ttype": "char"
+    },
+    {
+      "id": 8358,
+      "name": "activity_ids",
+      "field_description": "Activities",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8359,
+      "name": "activity_state",
+      "field_description": "Activity State",
+      "ttype": "selection"
+    },
+    {
+      "id": 8385,
+      "name": "activity_summary",
+      "field_description": "Next Activity Summary",
+      "ttype": "char"
+    },
+    {
+      "id": 8384,
+      "name": "activity_type_icon",
+      "field_description": "Activity Type Icon",
+      "ttype": "char"
+    },
+    {
+      "id": 8383,
+      "name": "activity_type_id",
+      "field_description": "Next Activity Type",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8382,
+      "name": "activity_user_id",
+      "field_description": "Responsible User",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8413,
+      "name": "amount_by_group",
+      "field_description": "Tax amount by group",
+      "ttype": "binary"
+    },
+    {
+      "id": 8414,
+      "name": "amount_tax",
+      "field_description": "Taxes",
+      "ttype": "monetary"
+    },
+    {
+      "id": 8415,
+      "name": "amount_total",
+      "field_description": "Total",
+      "ttype": "monetary"
+    },
+    {
+      "id": 8426,
+      "name": "amount_undiscounted",
+      "field_description": "Amount Before Discount",
+      "ttype": "float"
+    },
+    {
+      "id": 8412,
+      "name": "amount_untaxed",
+      "field_description": "Untaxed Amount",
+      "ttype": "monetary"
+    },
+    {
+      "id": 8406,
+      "name": "analytic_account_id",
+      "field_description": "Analytic Account",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8429,
+      "name": "authorized_transaction_ids",
+      "field_description": "Authorized Transactions",
+      "ttype": "many2many"
+    },
+    {
+      "id": 10663,
+      "name": "branch_id",
+      "field_description": "Lounge Name",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8386,
+      "name": "campaign_id",
+      "field_description": "Campaign",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8391,
+      "name": "client_order_ref",
+      "field_description": "Customer Reference",
+      "ttype": "char"
+    },
+    {
+      "id": 10664,
+      "name": "code",
+      "field_description": "Code",
+      "ttype": "char"
+    },
+    {
+      "id": 8424,
+      "name": "commitment_date",
+      "field_description": "Delivery Date",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8419,
+      "name": "company_id",
+      "field_description": "Company",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8399,
+      "name": "create_date",
+      "field_description": "Creation Date",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8434,
+      "name": "create_uid",
+      "field_description": "Created by",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8405,
+      "name": "currency_id",
+      "field_description": "Currency",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8416,
+      "name": "currency_rate",
+      "field_description": "Currency Rate",
+      "ttype": "float"
+    },
+    {
+      "id": 8394,
+      "name": "date_order",
+      "field_description": "Order Date",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8720,
+      "name": "delivery_count",
+      "field_description": "Delivery Orders",
+      "ttype": "integer"
+    },
+    {
+      "id": 10668,
+      "name": "departure_time",
+      "field_description": "Departure Time",
+      "ttype": "datetime"
+    },
+    {
+      "id": 10670,
+      "name": "destination",
+      "field_description": "Destination",
+      "ttype": "char"
+    },
+    {
+      "id": 8433,
+      "name": "display_name",
+      "field_description": "Display Name",
+      "ttype": "char"
+    },
+    {
+      "id": 8722,
+      "name": "effective_date",
+      "field_description": "Effective Date",
+      "ttype": "date"
+    },
+    {
+      "id": 10773,
+      "name": "email",
+      "field_description": "Email Address",
+      "ttype": "char"
+    },
+    {
+      "id": 8425,
+      "name": "expected_date",
+      "field_description": "Expected Date",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8418,
+      "name": "fiscal_position_id",
+      "field_description": "Fiscal Position",
+      "ttype": "many2one"
+    },
+    {
+      "id": 10667,
+      "name": "flight_no",
+      "field_description": "Flight Number",
+      "ttype": "char"
+    },
+    {
+      "id": 10672,
+      "name": "gate_no",
+      "field_description": "Gate Number",
+      "ttype": "char"
+    },
+    {
+      "id": 8432,
+      "name": "id",
+      "field_description": "ID",
+      "ttype": "integer"
+    },
+    {
+      "id": 8716,
+      "name": "incoterm",
+      "field_description": "Incoterm",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8408,
+      "name": "invoice_count",
+      "field_description": "Invoice Count",
+      "ttype": "integer"
+    },
+    {
+      "id": 8409,
+      "name": "invoice_ids",
+      "field_description": "Invoices",
+      "ttype": "many2many"
+    },
+    {
+      "id": 8410,
+      "name": "invoice_status",
+      "field_description": "Invoice Status",
+      "ttype": "selection"
+    },
+    {
+      "id": 8396,
+      "name": "is_expired",
+      "field_description": "Is expired",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8724,
+      "name": "json_popover",
+      "field_description": "JSON data for the popover widget",
+      "ttype": "char"
+    },
+    {
+      "id": 8388,
+      "name": "medium_id",
+      "field_description": "Medium",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8375,
+      "name": "message_attachment_count",
+      "field_description": "Attachment Count",
+      "ttype": "integer"
+    },
+    {
+      "id": 8367,
+      "name": "message_channel_ids",
+      "field_description": "Followers (Channels)",
+      "ttype": "many2many"
+    },
+    {
+      "id": 8365,
+      "name": "message_follower_ids",
+      "field_description": "Followers",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8373,
+      "name": "message_has_error",
+      "field_description": "Message Delivery error",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8374,
+      "name": "message_has_error_counter",
+      "field_description": "Number of errors",
+      "ttype": "integer"
+    },
+    {
+      "id": 8378,
+      "name": "message_has_sms_error",
+      "field_description": "SMS Delivery error",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8368,
+      "name": "message_ids",
+      "field_description": "Messages",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8364,
+      "name": "message_is_follower",
+      "field_description": "Is Follower",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8376,
+      "name": "message_main_attachment_id",
+      "field_description": "Main Attachment",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8371,
+      "name": "message_needaction",
+      "field_description": "Action Needed",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8372,
+      "name": "message_needaction_counter",
+      "field_description": "Number of Actions",
+      "ttype": "integer"
+    },
+    {
+      "id": 8366,
+      "name": "message_partner_ids",
+      "field_description": "Followers (Partners)",
+      "ttype": "many2many"
+    },
+    {
+      "id": 8369,
+      "name": "message_unread",
+      "field_description": "Unread Messages",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8370,
+      "name": "message_unread_counter",
+      "field_description": "Unread Messages Counter",
+      "ttype": "integer"
+    },
+    {
+      "id": 10471,
+      "name": "mrp_production_count",
+      "field_description": "Count of MO generated",
+      "ttype": "integer"
+    },
+    {
+      "id": 8361,
+      "name": "my_activity_date_deadline",
+      "field_description": "My Activity Deadline",
+      "ttype": "date"
+    },
+    {
+      "id": 8389,
+      "name": "name",
+      "field_description": "Order Reference",
+      "ttype": "char"
+    },
+    {
+      "id": 8411,
+      "name": "note",
+      "field_description": "Terms and conditions",
+      "ttype": "text"
+    },
+    {
+      "id": 8407,
+      "name": "order_line",
+      "field_description": "Order Lines",
+      "ttype": "one2many"
+    },
+    {
+      "id": 10666,
+      "name": "order_type",
+      "field_description": "Delayed Flight",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8390,
+      "name": "origin",
+      "field_description": "Source Document",
+      "ttype": "char"
+    },
+    {
+      "id": 8401,
+      "name": "partner_id",
+      "field_description": "Customer",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8402,
+      "name": "partner_invoice_id",
+      "field_description": "Invoice Address",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8403,
+      "name": "partner_shipping_id",
+      "field_description": "Delivery Address",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8417,
+      "name": "payment_term_id",
+      "field_description": "Payment Terms",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8719,
+      "name": "picking_ids",
+      "field_description": "Transfers",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8717,
+      "name": "picking_policy",
+      "field_description": "Shipping Policy",
+      "ttype": "selection"
+    },
+    {
+      "id": 8404,
+      "name": "pricelist_id",
+      "field_description": "Pricelist",
+      "ttype": "many2one"
+    },
+    {
+      "id": 10900,
+      "name": "private_aviation",
+      "field_description": "Private Aviation",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8721,
+      "name": "procurement_group_id",
+      "field_description": "Procurement Group",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8708,
+      "name": "purchase_order_count",
+      "field_description": "Number of Purchase Order Generated",
+      "ttype": "integer"
+    },
+    {
+      "id": 8392,
+      "name": "reference",
+      "field_description": "Payment Ref.",
+      "ttype": "char"
+    },
+    {
+      "id": 10673,
+      "name": "requested",
+      "field_description": "Requested Name",
+      "ttype": "char"
+    },
+    {
+      "id": 8398,
+      "name": "require_payment",
+      "field_description": "Online Payment",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8397,
+      "name": "require_signature",
+      "field_description": "Online Signature",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8640,
+      "name": "sale_order_option_ids",
+      "field_description": "Optional Products Lines",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8639,
+      "name": "sale_order_template_id",
+      "field_description": "Quotation Template",
+      "ttype": "many2one"
+    },
+    {
+      "id": 10669,
+      "name": "service_time",
+      "field_description": "Service Time",
+      "ttype": "datetime"
+    },
+    {
+      "id": 10674,
+      "name": "service_type",
+      "field_description": "Service Type",
+      "ttype": "selection"
+    },
+    {
+      "id": 8725,
+      "name": "show_json_popover",
+      "field_description": "Has late picking",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8430,
+      "name": "show_update_pricelist",
+      "field_description": "Has Pricelist Changed",
+      "ttype": "boolean"
+    },
+    {
+      "id": 8421,
+      "name": "signature",
+      "field_description": "Signature",
+      "ttype": "binary"
+    },
+    {
+      "id": 8422,
+      "name": "signed_by",
+      "field_description": "Signed By",
+      "ttype": "char"
+    },
+    {
+      "id": 8423,
+      "name": "signed_on",
+      "field_description": "Signed On",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8387,
+      "name": "source_id",
+      "field_description": "Source",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8393,
+      "name": "state",
+      "field_description": "Status",
+      "ttype": "selection"
+    },
+    {
+      "id": 8431,
+      "name": "tag_ids",
+      "field_description": "Tags",
+      "ttype": "many2many"
+    },
+    {
+      "id": 8420,
+      "name": "team_id",
+      "field_description": "Sales Team",
+      "ttype": "many2one"
+    },
+    {
+      "id": 10911,
+      "name": "total_quantity",
+      "field_description": "Total Quantity",
+      "ttype": "float"
+    },
+    {
+      "id": 8428,
+      "name": "transaction_ids",
+      "field_description": "Transactions",
+      "ttype": "many2many"
+    },
+    {
+      "id": 8427,
+      "name": "type_name",
+      "field_description": "Type Name",
+      "ttype": "char"
+    },
+    {
+      "id": 8400,
+      "name": "user_id",
+      "field_description": "Salesperson",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8395,
+      "name": "validity_date",
+      "field_description": "Expiration",
+      "ttype": "date"
+    },
+    {
+      "id": 8718,
+      "name": "warehouse_id",
+      "field_description": "Warehouse",
+      "ttype": "many2one"
+    },
+    {
+      "id": 8377,
+      "name": "website_message_ids",
+      "field_description": "Website Messages",
+      "ttype": "one2many"
+    },
+    {
+      "id": 8436,
+      "name": "write_date",
+      "field_description": "Last Updated on",
+      "ttype": "datetime"
+    },
+    {
+      "id": 8435,
+      "name": "write_uid",
+      "field_description": "Last Updated by",
+      "ttype": "many2one"
+    },
+    {
+      "id": 10671,
+      "name": "zone_no",
+      "field_description": "Zone Number",
+      "ttype": "char"
+    }
+  ],
+  "firstRecord": [
+    {
+      "id": 1365,
+      "name": "S01365"
+    }
+  ]
+}
